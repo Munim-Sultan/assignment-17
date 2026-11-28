@@ -203,6 +203,22 @@ if(operation === '+'){
 };
 
 //chap 12- 13
+//1. Write a program to check whether the given input number is divisible by 3 or else show a message “Number is not divisible by 3”. 
+var int = Number(prompt('Enter a number'));
+if(int % 3 === 0){
+    alert('It is divisible by 3');
+}else{
+    alert('It is not divisible by 3');
+};
+
+//2. Write a program that checks whether the given input is an even number or an odd number.
+var num = Number(prompt('Enter a number'));
+if(num % 2 === 0){
+    alert('It is an Even number');
+}else{
+    alert('It is an Odd number');
+};
+
 //3. Write an if/else statement with the following condition: If the variable age is greater than 18, output "Old enough", otherwise output "Too young". 
 var age = prompt('Enter your age');
 if(age === '18'){
@@ -328,6 +344,8 @@ if(character == 65){
     alert(`It is 'z'`);
 };
 
+//7. already done
+
 //8. Write a program that takes time as input from user in 24 hours clock format like: 1900 = 7pm. Implement the following case using if, else & else if statements 
 var time = Number(prompt('Enter time in 24 hour format without colon : '));
 
@@ -411,6 +429,12 @@ if(int < 0){
     alert('Number is positive');
 };
 
+//15. already done
+
+//16. Write a program that stores value in a variable & tell whether the type of that variable is a "number", "string", "boolean" or “undefined”
+var value = '56';
+alert('Data type of variable is :', typeof value);
+
 //17. Write a program that takes a character (i.e. string of length 1) and returns true if it is a vowel, false otherwise.
 var char = prompt('Enter a character');
 if(char == 'a'){
@@ -429,6 +453,62 @@ if(char == 'a'){
 
 //18. Choose the correct comparison operator to display "true", when: co
 console.log(10 != 8);
+
+//19. Use a switch statement to rewrite the following JavaScript code. Prompt the user for the number of a month rather than setting it to 8:
+var month = Number(prompt('Enter a month in number order'));
+switch (month) {
+    case 1:
+        alert('January');
+        break;
+
+    case 2:
+        alert('February');
+        break;
+    
+    case 3:
+        alert('March');
+        break;
+
+    case 4:
+        alert('April');
+        break;
+
+    case 5:
+        alert('May');
+        break;
+
+    case 6:
+        alert('June');
+        break;
+
+    case 7:
+        alert('July');
+        break;
+
+    case 8:
+        alert('August');
+        break;
+
+    case 9:
+        alert('September');
+        break;
+
+    case 10:
+        alert('October');
+        break;
+
+    case 11:
+        alert('November');
+        break;
+
+    case 12:
+        alert('Dcember');
+        break;
+
+    default:
+        alert('Please enter a valid number order');
+        break;
+};
 
 //20. Use a conditional (ternary) operator for this exercise: If the variable age is a value below 18, the value of the variable voteable should be "Too young", otherwise the value of voteable should be "Old enough".
 var voteable;
