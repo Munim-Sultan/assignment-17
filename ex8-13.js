@@ -211,3 +211,233 @@ if(age === '18'){
     alert('Too young')
 };
 
+//4. Write a program that prompts the user for their name, and then displays a special greeting to that person if their name is the same as yours. If the name entered by the user is anything other than your name, your code should not produce any output.
+var userName = prompt('Enter your name ');
+var myName = 'munim';
+
+if(myName === userName){
+    alert('Welcome!', userName);
+};
+
+//6. Write a program that takes a character(number or string) in a variable & checks whether the given input is a number, uppercase letter or lower case letter. (Hint: ASCII codes:- A=65, Z=90, a=97, z=122)
+var character = Number(prompt('Enter a code'));
+
+if(character == 65){
+    alert(`It is 'A'`);
+}else if(character == 66){
+    alert(`It is 'B'`);
+}else if(character == 67){
+    alert(`It is 'C'`);
+}else if(character == 68){
+    alert(`It is 'D'`);
+}else if(character == 69){
+    alert(`It is 'E'`);
+}else if(character == 70){
+    alert(`It is 'F'`);
+}else if(character == 71){
+    alert(`It is 'G'`);
+}else if(character == 72){
+    alert(`It is 'H'`);
+}else if(character == 73){
+    alert(`It is 'I'`);
+}else if(character == 74){
+    alert(`It is 'J'`);
+}else if(character == 75){
+    alert(`It is 'K'`);
+}else if(character == 76){
+    alert(`It is 'L'`);
+}else if(character == 77){
+    alert(`It is 'M'`);
+}else if(character == 78){
+    alert(`It is 'N'`);
+}else if(character == 79){
+    alert(`It is 'O'`);
+}else if(character == 80){
+    alert(`It is 'P'`);
+}else if(character == 81){
+    alert(`It is 'Q'`);
+}else if(character == 82){
+    alert(`It is 'R'`);
+}else if(character == 83){
+    alert(`It is 'S'`);
+}else if(character == 84){
+    alert(`It is 'T'`);
+}else if(character == 85){
+    alert(`It is 'U'`);
+}else if(character == 86){
+    alert(`It is 'V'`);
+}else if(character == 87){
+    alert(`It is 'W'`);
+}else if(character == 88){
+    alert(`It is 'X'`);
+}else if(character == 89){
+    alert(`It is 'Y'`);
+}else if(character == 90){
+    alert(`It is 'Z'`);
+}else if(character == 97){
+    alert(`It is 'a'`);
+}else if(character == 98){
+    alert(`It is 'b'`);
+}else if(character == 99){
+    alert(`It is 'c'`);
+}else if(character == 100){
+    alert(`It is 'd'`);
+}else if(character == 101){
+    alert(`It is 'e'`);
+}else if(character == 102){
+    alert(`It is 'f'`);
+}else if(character == 103){
+    alert(`It is 'g'`);
+}else if(character == 104){
+    alert(`It is 'h'`);
+}else if(character == 105){
+    alert(`It is 'i'`);
+}else if(character == 106){
+    alert(`It is 'j'`);
+}else if(character == 107){
+    alert(`It is 'k'`);
+}else if(character == 108){
+    alert(`It is 'l'`);
+}else if(character == 109){
+    alert(`It is 'm'`);
+}else if(character == 110){
+    alert(`It is 'n'`);
+}else if(character == 111){
+    alert(`It is 'o'`);
+}else if(character == 112){
+    alert(`It is 'p'`);
+}else if(character == 113){
+    alert(`It is 'q'`);
+}else if(character == 114){
+    alert(`It is 'r'`);
+}else if(character == 115){
+    alert(`It is 's'`);
+}else if(character == 116){
+    alert(`It is 't'`);
+}else if(character == 117){
+    alert(`It is 'u'`);
+}else if(character == 118){
+    alert(`It is 'v'`);
+}else if(character == 119){
+    alert(`It is 'w'`);
+}else if(character == 120){
+    alert(`It is 'x'`);
+}else if(character == 121){
+    alert(`It is 'y'`);
+}else if(character == 122){
+    alert(`It is 'z'`);
+};
+
+//8. Write a program that takes time as input from user in 24 hours clock format like: 1900 = 7pm. Implement the following case using if, else & else if statements 
+var time = Number(prompt('Enter time in 24 hour format without colon : '));
+
+if(time >= '0000' && time < 1200){
+    alert('Good Morning!');
+}else if(time >= 1200 && time < 1700){
+    alert('Good Afternoon!');
+}else if(time >= 1700 && time < 2100){
+    alert('Good Evening!');
+}else if(time >= 2100 && time <= 2359){
+    alert('Good Night!');
+};
+
+//9.   Write a program that takes a calendar year in YYYY format in a variable. Check & notify the user whether it is a leap year or not.
+var year = Number(prompt('Enter the year'));
+
+if(year % 4 === 0){
+    alert('It is a leap year');
+}else if(year % 400 === 0){
+    alert('It is a leap year');
+}else{
+    alert('It is not a leap year');
+};
+
+//10.  Write a program that  
+// a. Store correct password in a JS variable. 
+// b. Asks user to enter his/her password 
+// c. Validate the two passwords: 
+//    i. Check if user has entered password. If not, then give message “ Please enter your password” 
+//    ii. Check if both passwords are same. If they are same, show message “Correct! The password you entered matches the original password”. Show “Incorrect password” otherwise. 
+var pass = 1234;
+var password = Number(prompt('Enter password'));
+
+if(password){
+    if(password === pass){
+        alert('Correct password');
+    }else{
+        alert('Incorrect password');
+    };
+}else{
+    alert('Please enter password');
+};
+
+//11.  Write a program that adds an else statement to the following script to display “You are not Fahad” 
+var firstName = "Ali"; 
+if (firstName === "Fahad") { 
+document.write("Hello Fahad!"); 
+}else{
+document.write("You are not Fahad!"); 
+};
+
+//12. This if/else statement does not work. Try to fix it: 
+var greeting; 
+var hour = 13; 
+if (hour < 18) { 
+greeting = "Good day"; 
+}else{ 
+greeting = "Good evening"; 
+};
+
+//13. Write a JavaScript program that accept two integers and display the larger. Also show if the two integers are equal. 
+var int1 = Number(prompt('Enter an integer'));
+var int2 = Number(prompt('Enter another integer'));
+
+if(int1 > int2){
+    alert(`${int1} is greater`);
+}else if(int1 === int2){
+    alert('Both are equal');
+}else{
+    alert(`${int2} is greater`);
+};
+
+//14. Write a program that takes input a number from user & state whether the number is positive, negative or zero.
+var int = Number(prompt('Enter a number'));
+
+if(int < 0){
+    alert('Number is negative');
+}else if(int === 0){
+    alert('Number is Zero');
+}else{
+    alert('Number is positive');
+};
+
+//17. Write a program that takes a character (i.e. string of length 1) and returns true if it is a vowel, false otherwise.
+var char = prompt('Enter a character');
+if(char == 'a'){
+    alert('It is a vowel');
+}else if(char == 'e'){
+    alert('It is a vowel');
+}else if(char == 'i'){
+    alert('It is a vowel');
+} else if(char == 'o'){
+    alert('It is a vowel');
+}else if(char == 'u'){
+    alert('It is a vowel');
+}else{
+    alert('It is not a vowel');
+};
+
+//18. Choose the correct comparison operator to display "true", when: co
+console.log(10 != 8);
+
+//20. Use a conditional (ternary) operator for this exercise: If the variable age is a value below 18, the value of the variable voteable should be "Too young", otherwise the value of voteable should be "Old enough".
+var voteable;
+var userAge = Number(prompt('Enter your age'));
+
+if(age >= 18){
+    voteable = 'Old enough';
+    alert(voteable);
+}else{
+    voteable = 'Too young';
+    alert(voteable);
+};
