@@ -434,10 +434,4 @@ console.log(10 != 8);
 var voteable;
 var userAge = Number(prompt('Enter your age'));
 
-if(age >= 18){
-    voteable = 'Old enough';
-    alert(voteable);
-}else{
-    voteable = 'Too young';
-    alert(voteable);
-};
+voteable = userAge >= 18 ? 'Old Enough':'Too young';
